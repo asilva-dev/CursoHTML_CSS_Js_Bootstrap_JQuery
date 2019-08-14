@@ -12,6 +12,10 @@ body {
     margin: 0px;
     font-family: "Raleway", "Florentia", sans-serif;
 }
+
+textarea, input {
+    font-family: "Raleway", "Florentia", sans-serif;
+}
 .barra_superior {
     border-bottom: 1px solid rgb(204, 204, 204);
     color: rgb(187, 187, 187);
@@ -147,7 +151,7 @@ nav a.btn_destaque {
 .metade form {
     line-height: 250%;
 }
-.metade form input[type=text], textarea {
+.metade form input[type=text], textarea, .modal input[type=text] {
     border: none;
     border-bottom: 1px solid lightgray;
     width: 63%;
@@ -219,4 +223,44 @@ nav a.btn_destaque {
     .container_logo {
         text-align: center;
     }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 400px;
+    min-height: 200px;
+    background-color: white;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 20px;
+    border-radius: 4px;
+}
+.modal input[type=text] {
+    width: 95%;
+    background-color: white;
+}
+.modal a {
+    float: right;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+span.nao_valido {
+    color: red;
+    display: none;
+}
+
+input.nao_valido, textarea.nao_valido {
+    border-bottom: 1px solid red !important;
+}
+.texto {
+    color: gray;
+    float:right;
+    font-size: 12px;
+    line-height: 12px;
 }
