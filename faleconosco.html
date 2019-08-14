@@ -1,173 +1,128 @@
 <!DOCTYPE html>
-
-<html lang="pt-BR">
-<meta charset="utf-8"/>
-
-<head>
-	<title>Fale Conosco</title>
-</head>
-
-<body>
-	<div>
-		<!--  
-			GET: Dados passados pela URL / POST: Dados passados pela Requisição - URL
-		-->
-
-		<form enctype="application/x-www-form-urlencoded" method="POST">
-			<label for="NomeCompleto">Nome</label>
-			<input id="NomeCompleto" type="text" name="nome_completo" placeholder="Insira seu nome completo" />
-			<br><br>
-			<label for="email">E-mail</label>
-			<input id="email" type="text" name="email" placeholder="Insira seu E-mail" />
-			<br><br>
-			<label for="telefone">Telefone</label>
-			<input id="telefone" type="text" name="telefone" placeholder="Insira seu telefone" />
-			<br><br>
-			<label for=Mensagem>Mensagem</label>
-			<textarea name="Mensagem"></textarea>
-			<br><br>
-			<input type="submit" value="Enviar">
-			
-			<br><br>
-		</form>
-	</div>
-
-	<div>
-		<div>
-			Telefone: (11)97627-3717
-			Redes Sociais: (Facebook, Instagram, Linkedin)
-		</div>
-		<address>
-			Brasil, SP
-			<br />
-			07141-080
-			<br />
-			Rua Trajano de Faria, 216 apto 28 b
-			<br />
-			Jd Nova Taboão - Guarulhos
-		</address>
-	</div>
-
-	Fale Conosco
-
-</body>
-=======
 <html>
-
-<head>
-    <title>Fale Conosco</title>
-    <link rel="Stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-    <header>
-        <div class="barra_superior">
+    <head>
+        <title>Fale conosco</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <div class="barra_superior">
+                <div class="container">
+                    Horário de abertura: 9:00 - 18:00h
+                </div>
+            </div>
+            
+            
             <div class="container">
-                Horário de Abertura : 09:00 - 18:00
+                <img class="logo" alt="Logo da empresa" title="Aqui é apresentado a logo da empresa XYZ" src="img/logo.jpg" />
+                
+                <nav>
+                    <a href="index.html">Página Inicial</a> | 
+                    <a href="index.html#marcas">Marcas</a> | 
+                    <a title="Vai para a página de fale conosco" href="faleconosco.html">Fale Conosco</a> 
+                    <a class="btn_destaque" href="ondeestamos.html">Onde estamos</a>
+                </nav>
             </div>
-        </div>
+            
+        </header>
+        <br class="clearfix" />
+        <section class="sec_fale">
+            <div class="container">
+                <div class="metade">
+                    <!--
+                        Metodo:
+                        - GET: Dados são passados pela URL.
+                        - POST: Dados são passados pela Requisição.
+                    -->
+                    <form enctype="application/x-www-form-urlencoded" method="POST">
+                        <label for="NomeCompleto">Nome</label>
+                        <input id="NomeCompleto" type="text" name="Nome_Completo" placeholder="Digite seu nome completo" />
+                        <br />
+                        <label for="Email">Email</label>
+                        <input id="Email" type="text" name="Email" placeholder="Digite seu email" />
+                        <br />
 
-        <div class="container">
-            <img alt="Imagem do Logo da Empresa" title="Aqui é apresentado a Logo da empresa" src="img/logo.jpg" />
-            <nav>
+                        <label for="Telefone">Telefone</label>
+                        <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone" />
+                        <br />
 
-                <a>Página Inicial</a> | <a href="#marcas" />Produtos e Marcas |
-                <a title="Vai para a página de fale conosco" href="faleconosco.html">Fale Conosco</a>
-                <a class="btn_Destaque" href="ondeestamos.html">Onde Estamos</a>
-            </nav>
-        </div>
-    </header>
-    <br class="clearfix" />
-    <section class="sec_fale_onde">
-        <div class="metade form">
-            <form name="form_contato" enctype="application/x-www-form-urlencoded" method="GET">
-                <label for="NomeCompleto">Nome: </label>
-                <input type="text" name="Nome_Completo" placeholder="Insira seu nome completo" id="NomeCompleto" />
-                <br />
-                <label for="Email">E-mail: </label>
-                <input id="Email" type="text" name="Email" placeholder="Insira seu nome e-mail" /><br />
-                <label for="Telefone">Telefone: </label>
-                <input id="Telefone" type="text" name="Telefone" placeholder="Insira seu nome telefone" /> <br />
-                <label for="Mensagem">Mensagem</label>
-                <textarea name="Mensagem"></textarea><br />
-                <span class="texto">Caracteres</span>                
-                <br />
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-        <div class="metade">
-            <div>
-                <strong>Redes Sociais:</strong>
-                <div class="container_logo">
-                    <a href="#"><img alt="Link para a página do Facebook" src="img/facebook.jpg" /></a>
-                    <a href="#"><img alt="Link para a página do Twitter" src="img/twitter.jpg" /></a>
-                    <a href="#"><img alt="Link para a página do Instagram" src="img/Instragram.jpg" /></a>
-                </div><br />
-                <strong>Telefone:</strong> (11)99999-9999<br />
-            </div>
-            <br /> <br />
-            <address>
-                Brasil, SP
-                <br />
-                72000-000
-                <br />
-                QR 400, Conjunto 01
-                <br />
-                Casa 20, Samanbaia
-            </address>
-        </div>
-    </section>
-    <br class="clearfix" />
-    <footer>
-        <div class="container">
-            <div class="um_terco">
-                <div class="container_logo">
-                    <img class="logo" alt="Imagem do Logo da Empresa" title="Aqui é apresentado a Logo da empresa"
-                        src="img/logo.jpg" />
+                        <label for="Mensagem">Mensagem</label>
+                        <textarea name="Mensagem"></textarea>
+
+                        <br />
+                        <input type="submit" value="Enviar"/>
+                    </form>
                 </div>
-                <p>
-                    Nós oferecemos um serviço completo para o melhor conforto da sua visão.
-                </p>
-                <div class="container_logo">
-                    <a href="#"><img alt="Link para a página do Facebook" src="img/facebook.jpg" /></a>
-                    <a href="#"><img alt="Link para a página do Twitter" src="img/twitter.jpg" /></a>
-                    <a href="#"><img alt="Link para a página do Instagram" src="img/Instragram.jpg" /></a>
-                </div>
+                <div class="metade">
+                    <div>
 
-            </div>
-            <div class="um_terco">
-                <div class="margem_esquerda">
-                    <h3>Links</h3>
-                    <a alt="Vai para a página inicial do site" href="index.html">Inicio</a><br />
-                    <a alt="Vai para a lista de marcas que trabalhamos" href="#marcas">Produtos e Marcas</a><br />
-                    <a alt="Vai para a página inicial do site" href="faleconosco.html">Fale Conosco</a><br />
-                    <a alt="Vai para a página inicial do site" href="ondeestamos.html">Onde Estamos</a><br />
+                        <strong>Redes Sociais</strong>
+                        <br />
+                        <a href="#"><img alt="Link para Facebook" src="img/facebook.jpg" /></a>
+                        <a href="#"><img alt="Link para Twitter" src="img/twitter.jpg"  /></a>
+                        <a href="#"><img alt="Link para Instagram" src="img/Instragram.jpg"  /></a>
+                        <br />
+                        <br />
+                        <strong>Telefone:</strong> (61) 3333-3333.
+
+                    </div>
+                    <br />
+                    <br />
+                    <address>
+                        Brasil, DF
+                        <br />
+                        72000-000
+                        <br />
+                        QR 400 Conjunto 01
+                        <br />
+                        Casa 20, Samambaia.
+                    </address>
                 </div>
             </div>
-            <div class="um_terco">
-                <h3>Contato</h3>
-                <p>
-                    <strong>Endereço :</strong>Rua X, endereço Y, Avenida Z,
-                    Cidade, UF,
-                </p>
-                <p>
-                    <strong>Telefone:</strong> <a href="tel.11976273717">(11) 999999999</a>
-                </p>
-                <p>
-                    <strong>E-mail:</strong><a href="mailto:amanda.adgti@gmail.com">email@email.com.br</a>
-                </p>
-
+        </section>
+        <br class="clearfix" />
+        <footer>
+            <div class="container">
+                <div class="um_terco">
+                    <div class="container_logo">
+                        <img class="logo" alt="Logo da empresa" title="Aqui é apresentado a logo da empresa XYZ" src="img/logo.jpg" />
+                    </div>
+                    <p>
+                        Nos oferecemos um serviço completo para o melhor conforto da sua visão.
+                    </p>
+                    <div class="container_logo">
+                        <a href="#"><img alt="Link para Facebook" src="img/facebook.jpg" /></a>
+                        <a href="#"><img alt="Link para Twitter" src="img/twitter.jpg"  /></a>
+                        <a href="#"><img alt="Link para Instagram" src="img/Instragram.jpg"  /></a>
+                    </div>
+                    
+                </div>
+                <div class="um_terco">
+                    <div class="margem_esquerda">
+                        <h3>Links</h3>
+                    
+                        <a alt="Vai para a página inicial do site" href="index.html">Início</a><br />
+                        <a alt="Vai para a lista de marcas que trabalhamos" href="index.html#marcas">Marcas</a><br />
+                        <a title="Vai para a página de fale conosco" href="faleconosco.html">Fale Conosco</a><br />
+                        <a href="ondeestamos.html">Onde estamos</a><br />
+                    </div>
+                </div>
+                <div class="um_terco">
+                    <h3>Contato</h3>
+                    
+                    <p><strong>Endereço:</strong> Rua X, endereço Y, Avenia Z.
+                    Cidade, UF, 72000-000.</p>
+                    
+                    <p><strong>Telefone:</strong> <a href="tel:6133333333">(61) 3333-3333.</a></p>
+                    
+                    <p><strong>Email:</strong> <a href="mailto:otica@otica.com.br">otica@otica.com.br</a></p>
+                </div>
             </div>
             <br class="clearfix" />
-        </div>
-        <div class="direitos_reservados">
-            Todos os direitos reservados (@) 2019. <a href="termodeuso.html">Termos de uso</a> e <a
-                href="politicaprivacidade.html">Política de privacidade.</a>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/script.js">
-    </script>
-</body>
-
->>>>>>> Atualizando o repositório
+            <div class="direitos_reservados">
+                Todos os direitos reservados (@) 2017. <a href="termodeuso.html">Termos de uso</a> e <a href="politicaprivacidade.html">Política de privacidade</a>.
+            </div>
+        </footer>
+    </body>
 </html>
