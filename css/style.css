@@ -254,7 +254,6 @@ span.nao_valido {
     color: red;
     display: none;
 }
-
 input.nao_valido, textarea.nao_valido {
     border-bottom: 1px solid red !important;
 }

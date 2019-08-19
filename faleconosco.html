@@ -35,7 +35,7 @@
                         - GET: Dados são passados pela URL.
                         - POST: Dados são passados pela Requisição.
                     -->
-                    <form enctype="application/x-www-form-urlencoded" method="POST">
+                    <form name="form_contato" enctype="application/x-www-form-urlencoded" method="GET">
                         <label for="NomeCompleto">Nome</label>
                         <input id="NomeCompleto" type="text" name="Nome_Completo" placeholder="Digite seu nome completo" />
                         <br />
@@ -49,8 +49,8 @@
 
                         <label for="Mensagem">Mensagem</label>
                         <textarea name="Mensagem"></textarea>
-
-                        <br />
+                        <span class="texto">Caracteres</span>
+                        <br /><br />
                         <input type="submit" value="Enviar"/>
                     </form>
                 </div>
@@ -124,5 +124,6 @@
                 Todos os direitos reservados (@) 2017. <a href="termodeuso.html">Termos de uso</a> e <a href="politicaprivacidade.html">Política de privacidade</a>.
             </div>
         </footer>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

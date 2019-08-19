@@ -90,8 +90,9 @@ if(document.forms["form_contato"] != undefined){
     
     var textarea = document.querySelector("form[name = form_contato] textarea");
 
-    textarea.addEventListener("keypress", function(){
+    textarea.addEventListener("keyup", function(){
         this.className = "";
+        document.querySelector(".texto").innerHTML = "Caracteres: " + this.value.length;
     });
     
 /*Funções*/
